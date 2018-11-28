@@ -22,11 +22,12 @@
   color: #61dafb;
 }
 
-body{
+body {
   font-size: 17px;
+  min-width: 1000px;
 }
 
-.incomplete-field-warning-text{
+.incomplete-field-warning-text {
   color: #ff0000;
 }
 
@@ -36,7 +37,12 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.input-col {
+  min-width: 160px;
 }

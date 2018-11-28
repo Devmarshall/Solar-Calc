@@ -353,7 +353,7 @@ class App extends Component {
                 </div>
               </div>
               <div className="col-sm-3">
-                <div className="card" style={{ width: 400 }}>
+                <div className="card" style={{ width: "auto" }}>
                   <div className="card-header">
                     Total Load Capacity
                  </div>
@@ -379,22 +379,22 @@ class App extends Component {
                 </h2>
               </div>
               <div className="row">
-                <div className="col">
+                <div className="col input-col">
                   <label htmlFor="customRange3">Battery Eff.</label>
                   <input onChange={this.onChange_batteryEffeciency} type="range" className="custom-range" defaultValue="50" min="50" max="95" step="15" id="batteryEffeciency" />
                   {this.state.batteryEffeciency} %
                 </div>
-                <div className="col">
+                <div className="col input-col">
                   <label htmlFor="customRange3">PV Array Eff.</label>
                   <input onChange={this.onChange_pvArrayEffeciency} type="range" className="custom-range" defaultValue="50" min="50" max="95" step="15" id="pvArrayEffeciency" />
                   {this.state.pvArrayEffeciency} %
                 </div>
-                <div className="col">
+                <div className="col input-col">
                   <label htmlFor="customRange3">T.S.R.F.</label>
                   <input onChange={this.onChange_TSRF} type="range" className="custom-range" defaultValue="50" min="50" max="95" step="15" id="tsrf" />
                   {this.state.tsrf} %
                 </div>
-                <div className="col">
+                <div className="col input-col">
                   <label htmlFor="customRange3">Peak Sun Hours</label>
                   <input onChange={this.onChange_PeakSunHours} type="range" className="custom-range" defaultValue="1" min="1" max="12" step="0.5" id="peakSunHours" />
                   {this.state.peakSunHours} Hour(s)
@@ -402,12 +402,12 @@ class App extends Component {
               </div>
             </div>
 
-            <div className="col-sm-1 offset-sm-1 d-flex align-items-center">
+            <div className="col-sm-2 align-self-center" style={{ marginBottom: "10px" }}>
               <button onClick={this.compute_PVArrayRating} type="button" className="btn btn-primary">Compute</button>
             </div>
 
-            <div className="col-sm-3">
-              <div className="card" style={{ width: 400 }}>
+            <div className="col-sm-3 align-self-center">
+              <div className="card" style={{ width: "auto" }}>
                 <div className="card-header">
                   PV Array Rating
                  </div>
@@ -429,33 +429,33 @@ class App extends Component {
                 </h2>
               </div>
               <div className="row">
-                <div className="col">
+                <div className="col input-col">
                   <label htmlFor="customRange3">Expected Days of Autonomy</label>
                   <input onChange={this.onChange_DaysOfAutonomy} type="number" min="1" defaultValue="1" className="form-control" id="daysOfAutonomy" placeholder="Enter Days of Autonomy" />
                 </div>
-                <div className="col">
+                <div className="col input-col">
                   <label htmlFor="customRange3">Temperature Compensation</label>
                   <input onChange={this.onChange_TempCompensation} type="range" className="custom-range" defaultValue="50" min="50" max="95" step="15" id="tsrf" />
                   {this.state.tempCompensation} %
                 </div>
-                <div className="col">
+                <div className="col input-col">
                   <label htmlFor="customRange3">Allowed Depth of Discharge</label>
                   <input onChange={this.onChange_DepthOfDischarge} type="range" className="custom-range" defaultValue="50" min="50" max="95" step="15" id="tsrf" />
                   {this.state.depthOfDischarge} %
                 </div>
-                <div className="col">
+                <div className="col input-col">
                   <label htmlFor="customRange3">Nominal System Voltage</label>
                   <input onChange={this.onChange_NominalVoltage} type="range" className="custom-range" defaultValue="12" min="12" max="48" step="12" id="peakSunHours" />
                   {this.state.nominalVoltage} V
                 </div>
               </div>
             </div>
-            <div className="col-sm-1 offset-sm-1 d-flex align-items-center">
+            <div className="col-sm-2 align-self-center" style={{ marginBottom: "10px" }}>
               <button onClick={this.compute_BatteryCapacity} type="button" className="btn btn-primary">Compute</button>
             </div>
 
-            <div className="col-sm-3">
-              <div className="card" style={{ width: 400 }}>
+            <div className="col-sm-3 align-self-center">
+              <div className="card" style={{ width: "auto" }}>
                 <div className="card-header">
                   System Battery Capacity
                  </div>
@@ -494,12 +494,12 @@ class App extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-sm-1 offset-sm-1 d-flex align-items-center">
+            <div className="col-sm-2 align-self-center" style={{ marginBottom: "10px" }}>
               <button onClick={this.compute_InverterRating} type="button" className="btn btn-primary">Compute</button>
             </div>
 
-            <div className="col-sm-3 ">
-              <div className="card" style={{ width: 400 }}>
+            <div className="col-sm-3 align-self-center">
+              <div className="card" style={{ width: "auto" }}>
                 <div className="card-header">
                   System Inverter Rating
                  </div>
