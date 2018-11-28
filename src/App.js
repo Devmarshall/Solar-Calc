@@ -361,7 +361,7 @@ class App extends Component {
                     <li className="list-group-item"> <b> {this.state.TotalEnergyRequirement.toFixed(2)} Wh</b></li>
                   </ul>
                   <ul className="list-group list-group-flush">
-                    <li className="list-group-item"> <b> {(this.state.TotalEnergyRequirement / 1000).toFixed} KWh</b></li>
+                    <li className="list-group-item"> <b> {(this.state.TotalEnergyRequirement / 1000).toFixed(2)} KWh</b></li>
                   </ul>
                 </div>
               </div>
